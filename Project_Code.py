@@ -108,15 +108,6 @@ print("Mean Squared Error of SVR Model:", MSE1)
 print("R^2 Score of SVR Mode", R1)
 print("Accuracy of SVR Model=" + str(Accuracy1), "\n")
 
-dictionary = {
-    "R1": R1,
-    "MSE": MSE1,
-    "Accuracy": Accuracy1,
-}
- 
-with open("summary.json", "w") as outfile:
-    json.dump(dictionary, outfile)
-
 # --- Ridge model ---
 Ridge = Ridge(alpha=1)
 Ridge.fit(X_train, y_train)
@@ -164,7 +155,27 @@ print("R^2 Score of Gradient Boosting Regressor=", R4)
 print("Accuracy of Gradient Boosting Regressor=" + str(Accuracy4), "\n")
 
 
-# In[4]:
+
+dictionary = {
+    "R2_score1": R1,
+    "MSE1": MSE1,
+    "Accuracy1": Accuracy1,
+    
+    "R2_score2": R2,
+    "MSE2": MSE2,
+    "Accuracy2": Accuracy2,
+    
+    "R2_score3": R3,
+    "MSE3": MSE3,
+    "Accuracy3": Accuracy3,
+    
+    "R2_score4": R4,
+    "MSE4": MSE4,
+    "Accuracy4": Accuracy4
+}
+ 
+with open("summary.json", "w") as outfile:
+    json.dump(dictionary, outfile)
 
 
 ############### Plotting ################
