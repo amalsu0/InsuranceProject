@@ -1,5 +1,5 @@
 stages:
-  train::
+  train:
     cmd: python Project_Code.py
     deps:
       - insurance.csv
