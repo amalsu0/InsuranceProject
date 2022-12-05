@@ -1,6 +1,6 @@
 stages:
   build:
-    cmd: python Project_Code.ipynb
+    cmd: python Project_Code.py
     deps:
        - insurance.csv
     metrics:
