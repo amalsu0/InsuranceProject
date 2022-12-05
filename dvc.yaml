@@ -1,10 +1,8 @@
 stages:
-  train:
+  build:
     cmd: python Project_Code.py
     deps:
       - insurance.csv
-    outs:
-      - dvc.yaml 
     metrics:
       - summary.json:
           cache: false
