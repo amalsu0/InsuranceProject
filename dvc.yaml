@@ -1,6 +1,8 @@
 stages:
-   eval:
-    plots:
-      - plots:
+  build:
+    cmd: python Project_Code.ipynb
+    deps:
+       - insurance.csv
+    metrics:
+      - summary.json:
           cache: false
-          
