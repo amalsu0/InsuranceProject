@@ -6,7 +6,6 @@ This project implements a predictive model for insurance charges using various m
 
 ### Table of Contents
 - [Installation](#installation)
-- [Usage](#usage)
 - [Data](#data)
 - [Modeling](#modeling)
 - [Results](#results)
@@ -20,21 +19,6 @@ To run this project, ensure you have Python 3.x installed along with the followi
 ```bash
 pip install numpy pandas matplotlib seaborn scikit-learn
 ```
-
-### Usage
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/insurance-charges-prediction.git
-   cd insurance-charges-prediction
-   ```
-
-2. Place the `insurance.csv` dataset in the same directory as the script.
-
-3. Run the script:
-   ```bash
-   python your_script_name.py
-   ```
 
 ### Data
 
